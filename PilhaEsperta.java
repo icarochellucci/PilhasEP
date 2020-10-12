@@ -11,11 +11,11 @@ public class PilhaEsperta {
         System.out.println("Especifique o caminho do arquivo de entrada: ");
         // EXEMPLO===> "C:\\entradas\\tarefas1000.txt"
         String entradaArquivos = arquivos.nextLine();
-        // Inserir o local de saída de arquivos
-        System.out.println("Especifique o caminho do arquivo de saída e seu título a ser criado: ");
-        // EXEMPLO==> "C:\\PEsaidas\\PEsaidas1000.txt"
+        // Inserir o local de saÃ­da de arquivos
+        System.out.println("Especifique o caminho do arquivo de saÃ­da e seu tÃ­tulo a ser criado: ");
+        // EXEMPLO==> "C:\\saidas\\PEsaidas\\PEsaidas1000.txt"
         String saidaArquivos = arquivos.nextLine();
-    	long start = System.currentTimeMillis(); // Início do cronômetro  
+    	long start = System.currentTimeMillis(); // InÃ­cio do cronÃ´metro  
         File entradaDados = new File (entradaArquivos);        
         Stack <String> stack = new NodeStack <String> ();
         arquivos.close();
@@ -39,7 +39,7 @@ public class PilhaEsperta {
         }
         long end = System.currentTimeMillis();// fim do cronometro
         double total = (double) (end - start)/1000;
-        System.out.println("Começo do programa = "+start);
+        System.out.println("ComeÃ§o do programa = "+start);
         System.out.println("Fim do programa = "+end);
         System.out.println("Tempo total = "+total+" segundos");
     }
